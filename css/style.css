@@ -1,0 +1,710 @@
+:root{
+    --color-de-fondo: #dcd9dd;
+    --color-franja: #6e7089;
+    --color-seccions-fons:#edeef8;
+    --color-pointer:#cccee6;
+    --subtitul-color:#968eef;
+    --titols-seccions:black;
+    --sub-seccio-habilitats:#cfd1e4;
+    --color-botto:#ff3131;
+    --color-pointer_titol: #6e7089;
+}
+
+body{
+    font-family: "Telegraf Regular";
+    background-color: var(--color-de-fondo);
+}
+
+h1{
+    font-family: "Telegraf UltraBold";
+    color: white;
+    font-size: 1.4rem;
+}
+h2{
+    font-family: "Telegraf UltraBold";
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+    padding: 8px 10px;
+    background-color:var(--subtitul-color);
+}
+h3{
+    font-family: 'Telegraf UltraBold';
+    color:var(--titols-seccions);
+    font-size: 12px;
+}
+h4{
+   font-family: 'Telegraf UltraBold';
+   color:var(--titols-seccions);
+   font-size: 11px; 
+}
+p{
+  font-size: 11px;  
+}
+div a{
+    font-size: 11px; 
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+#profesional, #contacte, #habilitats, #idiomes{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 50px;
+    margin: 10px 0;
+}
+
+/* contacte */
+#contacte > div{
+    background-color: var(--color-seccions-fons);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 1rem;
+    width: fit-content;
+}
+#contacte a{
+text-decoration: none;
+}
+
+/* profesional */
+#profesional > div{
+    background-color: var(--color-seccions-fons);
+    border-radius: 1rem;
+    width: 300px;
+    padding: 9px;
+}
+
+/* habilitats */
+#habilitats{
+    margin: 5px;
+    background-color: var(--color-seccions-fons);
+    padding: 15px;
+    border-radius: 1rem;
+    width: fit-content;
+}
+.habilitats_sec > div{
+    display: flex;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 1rem;
+    background-color: var(--sub-seccio-habilitats);
+}
+.habilitats_sec{
+    display: flex;
+    flex-direction: row;
+}
+
+/* idiomes */
+#idiomes > div {
+    margin: 5px 0;
+    background-color: var(--color-seccions-fons);
+    padding: 10px;
+    border-radius: 1rem;
+    width: fit-content;
+}
+
+/* Capçalera mòbil */
+header{
+    position: relative;
+    /* display: flex; */
+    /* flex-direction: column; */
+    text-align: center;
+    /* align-items: center; */
+}
+.fLila{
+    background-color: var(--color-franja);
+    /* width: 100%; */
+    padding: 1.5rem 1rem;
+    position: relative;
+    margin-left: 60px;
+}
+.fotoPerfil{
+    position: absolute;
+    left: -1%;
+    transform: translateX(-50%);
+    top: 5px;
+    max-width: 6rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 4px;
+    border: 6px solid white;
+}
+
+/* footer */
+.footer{
+    background-color: var(--color-franja);
+    padding: 1.5rem 1rem;
+}
+.footer_sec{
+    display: flex;
+    flex-direction: row;         
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+.footer p{
+    font-family: "Telegraf UltraBold";
+}
+.boto_cv{
+    animation: pulsar 0.5s ease-in-out infinite both;
+    box-shadow: 0 0 8px rgba(255,255,255,0.25);
+    border-radius: 8px;
+    font-size: 11px;
+    text-decoration: none;
+    color: #000;
+}
+@keyframes pulsar{
+    0%   { 
+        transform: scale(1); 
+    }
+    50%  { 
+        transform: scale(0.95); 
+    }
+    100% { 
+        transform: scale(1); 
+    }
+}
+
+/*  Pseudo-element (Badges) */
+.badge_nou, .badge_proces{
+font-size: xx-small;
+}
+.badge_nou::after{
+    content: "Nou";  
+    background-color: red;
+    color: white;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 3px;
+}
+.badge_proces::after{
+    content: "En procés";  
+    background-color: red;
+    color: white;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+/* TIMELINE — MOBILE FIRST */
+.timeline{
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 150px 3px auto;
+    background-color: transparent;
+}
+.timeline_component .timeline_date{
+    font-family: "Telegraf UltraBold";
+    display: flex;
+    position: sticky;
+    top: 20px;
+    z-index: 1;
+    font-size: 12px;
+    padding-right: 20px;
+    justify-content: end;
+}
+.titols_timeline{
+    padding-left: 190px;
+    padding-top: 9px;
+}
+.timeline_barra{
+    position: relative;
+    background: var(--color-franja);
+    min-height: 100%;
+}
+.timeline_point{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-style: dashed;
+    border-width: 2px; 
+    border-color:  #6e7089;
+    background: var(--color-pointer);
+    border-radius: 50%;
+}
+.timeline_box{
+    margin-left: 10px;
+    padding: 0.5rem;
+}
+.timeline_box > article{
+    display: block;
+    margin: 4px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: fit-content;
+
+}
+.blocFormacio{
+    line-height: 1.5em;
+}
+.sub_titol_timeline{
+    font-family: "Telegraf UltraBold";
+    font-size: 12px;
+}
+.timeline_box a{
+    font-size: 11px;
+    text-decoration: none;
+}
+
+/* MENU mòbil */
+#abrir{
+    border:none;
+    background-color: transparent;
+    position: absolute;
+    top: 12px;
+    right:12px;
+    color: black;
+}
+.menu{
+    display: none;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    background-color: var(--color-seccions-fons);
+    padding: 12px;
+    font-size: 10px;
+    
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.menu > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: transparent;
+
+}
+.menu > ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+.menu.show{
+    display: block;
+    border-radius: 5%;
+}
+
+/* DESKTOP */
+@media (min-width: 500px){
+
+body{
+        font-family: "Telegraf Regular";
+        background-color: var(--color-de-fondo);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1.5rem;
+    padding: 10px 24px;
+}
+h3{
+     font-size: 1.5rem;
+}
+h4{
+   font-size: 1.3rem; 
+}
+p{
+  font-size: 17px;  
+}
+div a{
+    font-size: 17px; 
+}
+
+#profesional, #contacte, #habilitats, #idiomes{
+    padding-left: 90px;
+    margin: 20px 0 20px;
+}
+
+/* contacte */
+#contacte > div{
+    padding: 15px;
+    margin: 5px;
+    border-radius: 1rem;
+    width: fit-content;
+}
+/* profesional */
+#profesional > div{
+    margin: 5px;
+    padding: 15px;
+    border-radius: 1rem;
+    width: fit-content;
+}
+/* habilitats */
+#habilitats{
+    margin: 5px;
+    padding: 15px;
+    margin-left: 90px;
+    border-radius: 1rem;
+    width: fit-content;
+}
+.habilitats_sec > div{
+    display: flex;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 1rem;
+}
+.habilitats_sec{
+    display: flex;
+    flex-direction: row;
+}
+/* idiomes */
+#idiomes > div {
+    margin: 5px;
+    padding: 15px;
+    border-radius: 1rem;
+    width: fit-content;
+}
+
+/*Capçalera*/
+header{
+    position: relative;
+    /* display: flex; */
+    text-align: center;
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+}
+.fLila{
+    background-color: var(--color-franja);
+    /* width: 100%; */
+    padding: 2rem 1rem 2rem 1rem;
+    position: relative;
+    margin-left: 100px;
+}
+.fotoPerfil{
+    position: absolute;
+    left: -10px;          
+    top: 10px; 
+    aspect-ratio: 1;            
+    max-width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 4px;
+    border: 15px solid white;
+}
+
+/*footer*/
+.footer{
+    background-color: var(--color-franja);
+    padding: 2rem 1rem 2rem 1rem;
+}
+.footer > div{
+    justify-content: space-around;
+    color: white;
+    
+}
+.footer_sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.boto_cv{
+    border-radius: 10px;
+    animation: pulsar 0.5s ease-in-out infinite both;
+    font-size: 17px;
+}
+
+@keyframes pulsar{
+    0% { 
+        transform: scale(1); 
+    } 50% { 
+        transform: scale(0.95); 
+    } 100% { 
+        transform: scale(1); 
+    } 
+}
+
+/*  Pseudo-element (Badges) */
+.badge_nou{
+  font-size: 17px;  
+}
+.badge_nou::after{
+    content: "Nou"; 
+    padding: 4px 8px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+.badge_proces{
+  font-size: 17px;  
+}
+.badge_proces::after{
+    content: "En procés"; 
+    padding: 4px 8px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* MENU */
+#abrir{
+    border:none;
+    background-color: transparent;
+    position: absolute;
+    top: 1em;
+    right:1em;
+}
+#abrir i,
+#cerrar i {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.menu{
+    display: none;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    background-color: var(--color-seccions-fons);
+    padding: 2em;
+}
+.menu > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: transparent;
+}
+.menu > ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+.menu.show{
+    display: block;
+    border-radius: 5%;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/*TIMELINE*/
+.timeline{
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 0.7fr 3px 1fr; 
+    background-color: transparent;
+}
+.timeline_component .timeline_date{
+    top: 30px;
+    z-index: 1;
+    padding-right: 90px;
+    font-size: 18px;
+    justify-content: end;
+}
+.titols_timeline{ 
+    padding-left: 630px;
+    padding-top: 10px; 
+}
+.timeline_barra{
+    position: relative;
+    background: var(--color-franja);
+    min-height: 100%;
+}
+.timeline_point{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 25px;
+
+    border-style: dashed;
+    border-width: 2px; 
+    border-color:  #6e7089;
+
+    background: var(--color-pointer);
+    border-radius: 50%;
+}
+.timeline_box{
+    padding: 1.5rem ;
+    margin-left: 20px;
+}
+.timeline_box > article{
+    display: block;
+    margin: 5px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.blocFormacio{
+    line-height: 1.5em;
+}
+.sub_titol_timeline{
+    font-family: "Telegraf UltraBold";
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+.timeline_box a{
+font-size: 17px;
+}
+
+/* PRINT */
+@media print {
+    body { 
+        background: #fff;
+        color: #000;
+        margin: 0;
+    }
+    .footer,.abrir-menu,.menu .boto_cv{
+        display: none !important;
+    }
+    #contacte,#profesional {
+        display: block !important;
+        visibility: visible !important;
+        color:#000;
+    } 
+
+    /* CAPÇALERA */
+    .fLila {
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        gap: 20px;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+    .fotoPerfil {
+        position: static !important;
+        display: block !important;
+        visibility: visible !important;
+        margin-left: 10px;
+        max-width: 12rem;
+        border-radius: 50%;
+        filter: grayscale(50%);   
+    }
+
+    /* TIPOGRAFIES */
+    h1 {
+        color: black;
+        font-size: 22pt;
+        margin: 0;
+    }
+    h2 {
+        color: black;
+        font-size: 16pt;
+        margin: 0;
+        padding: 0.2rem 0.5rem;
+        background: none;
+    }
+    h3 {
+        color: black;
+        font-size: 15pt;
+        padding-bottom: 2px;
+    }
+    p {        
+        color: black;
+        font-size: 12pt;
+    }
+    a::after {
+        content: " (" attr(href) ")";
+        color: #000;
+    }
+    .timeline{
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    }
+.timeline_component .timeline_date{
+    position: static !important;
+    padding: 0;
+    padding-right: 50px;
+    margin-bottom: 3px;
+    font-size: 12pt;
+}
+.titols_timeline{
+    margin: 15px;
+    padding-left: 300px;
+}
+.timeline_barra{
+    position: relative;
+    min-height: 100%;
+}
+.timeline_point{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-style: dashed;
+    border-width: 2px; 
+    border-radius: 50%;
+}
+.timeline_box{
+    margin-bottom:10px;
+    padding:0;
+    margin-left: 15px;
+}
+.timeline_box > article{
+    background: none;
+    box-shadow: none;
+    padding: 3px;
+    width: fit-content;
+
+}
+.blocFormacio{
+    line-height: 1.5em;
+}
+.sub_titol_timeline{
+    font-family: "Telegraf UltraBold";
+    font-size: 12pt;
+}
+.timeline_box a{
+    font-size: 12pt;
+    text-decoration: none;
+    color:#000;
+}
+.footer{
+    display: block !important;
+    visibility: visible !important;
+}
+.boto_cv{
+    display: none;
+}
+.footer_sec p{
+    padding-right:90px;
+}
+
+}
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
