@@ -1,58 +1,60 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/hL85mACD)
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/POSA_EL_TEU_LINK)
 
-👉 Deploy a Vercel URL:  https://0373-dam-pr1-annaegea07.vercel.app/
+# Currículum Web — Anna Egea Capdevila
+Aquest projecte va ser encarregat pel professor i consistia a crear una pàgina web per presentar el Currículum Vitae utilitzant HTML5 i CSS3, amb un disseny professional, Mobile First, responsive i preparada per imprimir. Inclou una capçalera personalitzada, seccions modulars i una línia del temps interactiva.
 
-🎯 Currículum Web — Anna Egea Capdevila
+## **Demo en línia**
+🔗 [Veure projecte]([https://alumnesemad.cat/egea_anna/OCEAN/](https://0373-dam-pr1-annaegea07.vercel.app/))
 
-Aquest projecte va ser encarregat pel professor i consistia a crear una pàgina web per presentar el Curriculum Vitae utilitzant ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) i CSS3, amb un disseny professional, mobile‑first, responsive i preparada per imprimir. El qual inclou una capçalera personalitzada, seccions modulars i una línia del temps interactiva
+> [!WARNING]
+> Aquesta microsite només és compatible amb escriptori (desktop) i movile first
 
-📁 Estructura de carpetes:
-0373-dam-pr1-annaegea07
-│
+## **Estructura de carpetes**
+```text
+0373-dam-pr1-annaegea07/
 ├── index.html
 ├── index.js
 ├── README.md
 ├── css/
 │   ├── style.css
 │   ├── reset.css
-│   └── telefraf-fontface.css
-│
-├── assets/
-│   ├── favicon.png
-│   ├── anna-egaea-perfil.jpeg
-│   ├── bars-solid-full.svg
-│   ├── Telegraf UltraLight 200.woff
-│   ├── Telegraf UltraBold 800.woff
-    └── TelegrafRegular_272984568a25d8528fe2de8b20b29011.woff
+│   └── telegraf-fontface.css
+└── assets/
+    ├── favicon.png
+    ├── anna-egea-perfil.jpeg
+    ├── bars-solid-full.svg
+    ├── Telegraf UltraLight 200.woff
+    ├── Telegraf UltraBold 800.woff
+    └── Telegraf Regular.woff
+```
+## Decisions tècniques
+- **Mobile First:** El disseny s'ha estructurat primer per a mòbil i després adaptat per a pantalles més grans amb media queries.
+- **Tipografia personalitzada:** S'ha utilitzat la font Telegraf amb `@font-face` per mantenir una identitat visual professional.
+- **Mode impressió:** S'ha creat un full d'estils específic per a impressió que oculta elements innecessaris i mostra les URLs dels enllaços.
 
+## 📸 Captures de pantalla
 
-🛠️ Funcionalitats destacades:
+> ⚠️ Afegeix aquí les captures quan les tinguis
 
-- Menú hamburguesa amb icones personalitzades (Font Awesome)  
-  https://fontawesome.com/
-- Timeline responsive construïda amb CSS Grid  
-- Animació CSS aplicada a elements interactius  
-- Mode impressió amb disseny net i URLs visibles  
+## 🛠️ Funcionalitats destacades
 
+- **Menú hamburguesa** amb icones personalitzades ([Font Awesome](https://fontawesome.com/))
+- **Timeline responsive** construïda amb CSS Grid
+- **Animació CSS** aplicada a elements interactius
+- **Mode impressió** amb disseny net i URLs visibles
 
-🧩 Ajudes de suport utilitzades
+## 🧩 Recursos i tutorials utilitzats
 
-Timeline en mòbil  
-https://youtu.be/FuJZsTt4bJA?si=Vfx7oFixIrsxHDH0  
+Timeline en mòbil:
+[![Veure tutorial](https://img.youtube.com/vi/FuJZsTt4bJA/maxresdefault.jpg)](https://youtu.be/FuJZsTt4bJA?si=Vfx7oFixIrsxHDH0)
 
-Animació CSS  
-https://youtube.com/shorts/taT1n9G7arE?si=CKpKJBCRinZQTTYb
+Animació CSS:
+[![Veure tutorial](https://img.youtube.com/vi/taT1n9G7arE/maxresdefault.jpg)](https://youtube.com/shorts/taT1n9G7arE?si=CKpKJBCRinZQTTYb)
 
-Icones del menú de navegació
-https://fontawesome.com/
+Icones: [Font Awesome](https://fontawesome.com/)
 
+## 🔧 Tecnologies utilitzades
 
-
-
-
-
-
-
-
-
-
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
