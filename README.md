@@ -4,10 +4,7 @@
 Aquest projecte va ser encarregat pel professor i consistia a crear una pàgina web per presentar el Currículum Vitae utilitzant HTML5 i CSS3, amb un disseny professional, Mobile First, responsive i preparada per imprimir. Inclou una capçalera personalitzada, seccions modulars i una línia del temps interactiva.
 
 ## **Demo en línia**
-🔗 [Veure projecte]([https://alumnesemad.cat/egea_anna/OCEAN/](https://0373-dam-pr1-annaegea07.vercel.app/))
-
-> [!WARNING]
-> Aquesta microsite només és compatible amb escriptori (desktop) i movile first
+🔗 [Veure projecte](https://0373-dam-pr1-annaegea07.vercel.app/
 
 ## **Estructura de carpetes**
 ```text
