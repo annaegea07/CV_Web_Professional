@@ -1,10 +1,10 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/POSA_EL_TEU_LINK)
 
 # Currículum Web — Anna Egea Capdevila
-Aquest projecte va ser encarregat pel professor i consistia a crear una pàgina web per presentar el Currículum Vitae utilitzant HTML5 i CSS3, amb un disseny professional, Mobile First, responsive i preparada per imprimir. Inclou una capçalera personalitzada, seccions modulars i una línia del temps interactiva.
+Pàgina web personal per presentar el Currículum Vitae, desenvolupada com a projecte acadèmic amb HTML5, CSS3 i JavaScript. Segueix la metodologia Mobile First, amb disseny responsive, optimitzada per a impressió i descàrrega.
 
 ## **Demo en línia**
-🔗 [Veure projecte](https://0373-dam-pr1-annaegea07.vercel.app/
+🔗 [Veure projecte](https://0373-dam-pr1-annaegea07.vercel.app/)
 
 ## **Estructura de carpetes**
 ```text
